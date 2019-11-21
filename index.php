@@ -18,13 +18,20 @@
                     <span>Fruit</span>
                 </div>
             </div>
-            <a href="#" class="kids-area-button"><p>Kids Area </p></a>
+            <a href="#" id="kids-area-button"><p>Kids Area </p></a>
             <a href="#">Our Farms</a>
             <a class="nav-dropdown-container" href="#">
                 <p>Vegetables</p>
             </a>
             <a href="#">Fruit</a>
             <a href="#">Home</a>
+        </div>
+        <div class="corner"></div>
+    </div>
+    <div class="margin">
+        <div class="box">
+            <h1 class="box-header">McIntire Fruit</h1>
+            <h4 class="box-header-desc">Quality Fruit & Veg at a low price!</h4>
         </div>
     </div>
 </body>
