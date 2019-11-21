@@ -1,0 +1,24 @@
+W/*
+colors:
+    green: 119822
+    grey: C5C5C5
+    red: ED6A5A
+    white: DEF6CA
+    dark: 181D27
+*/
+* {
+    box-sizing:border-box;
+}
+body {
+    font-family:"Montserrat", "sans-serif";
+    background:#fff;
+    color:#181D27;
+    margin:0;
+    display:flex;
+    flex-direction:row;
+}
+.margin {
+    width:1200px;
+    max-width:97vw;
+    margin:0 auto;
+}
