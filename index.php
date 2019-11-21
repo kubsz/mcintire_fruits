@@ -29,9 +29,14 @@
         <div class="corner"></div>
     </div>
     <div class="margin">
-        <div class="box">
-            <h1 class="box-header">McIntire Fruit</h1>
-            <h4 class="box-header-desc">Quality Fruit & Veg at a low price!</h4>
+        <div class="box box1">
+            <div class="box-split">
+                <img src="/img/fruits.jpg">
+            </div>
+            <div class="box-split">
+                <h1 class="box-header">McIntire Fruit</h1>
+                <h4 class="box-header-desc">At McIntire Fruit we pride ourselves in producing quality, healthy fruit and vegetables grown naturally and in an environmentally sustainable way.</h4>
+            </div>
         </div>
     </div>
 </body>
