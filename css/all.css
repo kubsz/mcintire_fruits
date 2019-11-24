@@ -11,7 +11,7 @@ colors:
 }
 body {
     font-family:"Montserrat", "sans-serif";
-    background: #fbfbfb;
+    background: #F8F3E3;
     color:#181D27;
     margin:0;
 }
@@ -22,24 +22,33 @@ body {
 }
 .box {
     margin-top:20px;
-    background:#fff;
-    box-shadow:0 0 5px rgba(0,0,0,.1);
     padding:20px;
-    display:flex;
-}
-.box-split {
-    max-width:60%;
-}
-.box-split > img {
-    margin:20px;
-    width:calc(100% - 40px);
+    text-align:center;
 }
 .box-header {
-    margin:0 0 10px 0;
-    font-size:48px;
+    margin:20px 0 10px 0;
+    font-size:72px;
+    letter-spacing:3px;
+    color:#f94414;
+    text-transform:uppercase;
+    font-weight:700;
+    font-family: 'Londrina Solid', cursive;
+}
+.box-header::before {
+    content: url(/img/leaf.png);
+    transform: scaleX(-1) translate(8px, -8px);
+    display:inline-block;
+    line-height:72px;
+}
+.box-header::after {
+    content: url(/img/leaf.png);
+    transform: translate(8px, -8px);
+    display:inline-block;
+    line-height:72px;
 }
 .box-header-desc {
-    font-size:18px;
-    font-weight:600;
-    margin:0;
+    font-size:20px;
+    font-weight:700;
+    width:900px;
+    margin:0 auto;
 }
