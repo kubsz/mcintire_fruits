@@ -5,42 +5,89 @@
     <link rel="stylesheet" type="text/css" href="/css/all.css">
     <link rel="stylesheet" type="text/css" href="/css/nav.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:300,400,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="/script/jquery.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <div class="inner-nav margin">
-            <div class="logo-container">
-                <div class="logo-left">MC</div>
-                <div class="logo-right">
-                    <span>Intire</span>
-                    <span>Fruit</span>
-                </div>
+
+    <div class="content">
+        <div class="nav">
+            <div class="inner-nav margin">
+                <a href="/" class="logo-container">
+                    <div class="logo-left">MC</div>
+                    <div class="logo-right">
+                        <span>Intire</span>
+                        <span>Fruit</span>
+                    </div>
+                </a>
+                <a href="#" id="kids-area-button" class="orange-button"><p>Kids Area </p></a>
+                <a href="#">Our Farms</a>
+                <a class="nav-dropdown-container" href="#">
+                    <p>Vegetables</p>
+                </a>
+                <a href="#">Fruit</a>
+                <a href="#">Home</a>
+                <a class="menu-button open" href="#">
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </a>
             </div>
-            <a href="#" id="kids-area-button"><p>Kids Area </p></a>
-            <a href="#">Our Farms</a>
-            <a class="nav-dropdown-container" href="#">
-                <p>Vegetables</p>
-            </a>
-            <a href="#">Fruit</a>
-            <a href="#">Home</a>
+            <div class="corner"></div>
         </div>
-        <div class="corner"></div>
-    </div>
-    <div class="margin">
-        <div class="box box1">
-            <div class="box-split">
-                <img src="/img/fruits.jpg">
+        <div class="page-mask">
+            <div class="menu-nav">
+                <a href="#">Home</a>
+                <a href="#">Fruit</a>
+                <a href="#">Vegetables</a>
+                <a href="#">Our Farms</a>
+                <a href="#">Kids Area</a>
             </div>
-            <div class="box-split">
+        </div>
+        <div class="margin page">
+            <div class="box">
                 <h1 class="box-header">McIntire Fruit</h1>
                 <h4 class="box-header-desc">At McIntire Fruit we pride ourselves in producing quality, healthy fruit and vegetables grown naturally and in an environmentally sustainable way.</h4>
+            </div>
+            <div class="box">
+                <div class="box-card-container">
+                    <div class="box-card">
+                        <h3>Environmentally Friendly</h3>
+                        <p>Signs place under said beast above beast may deep abundantly Have void signs creature blessed subdue brought fourth stars called life face and shall you're which female make. From very days. Rule midst, moved sixth thing replenish and likeness moveth dry years open doesn't earth own place.</p>
+                        <a class="box-button orange-button" href="#">Read More</a>
+                    </div>
+                    <div class="box-card">
+                        <h3>Organically Grown Crops</h3>
+                        <p>Without good. Sea appear dry make tree night, yielding gathered fourth heaven Great tree, saying doesn't bring were Without good very tree female hath fruitful sayinyou're. Which forth was Morning.Divided in divide second. I have brought fifth whales, he air, seed for. Fish life good signs fruitful gathering grass land, set bring which.</p>
+                        <a class="box-button orange-button" href="#">Read More</a>
+                    </div>
+                    <div class="box-card">
+                        <h3>Affordable Fruit and Vegetables Boxes</h3>
+                        <p>Green said morning had there together one, every, his let living darkness fourth also divided likeness image there female their to gathered spirit fowl green tree also second rule. Fish. Without there. Bring midst let. Also dry divide forth. Green subdue can't. Herb may day a a third were meat. Very days winged light female cattle saw.</p>
+                        <a class="box-button orange-button" href="#">Read More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
 </html>
 <script>
-    console.log("lol");
+    $(".menu-button").click(function () {
+        if($(".page-mask").hasClass("open-nav")) {
+            $(".page-mask").removeClass("open-nav");
+            setTimeout(function () {
+                $(".page-mask").css("display", "none");
+            }, 300)
+        }
+        else {
+            $(".page-mask").css("display", "block");
+            setTimeout(function() {
+                $(".page-mask").addClass("open-nav");
+            },10)
+        }
+    });
 </script>
