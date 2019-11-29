@@ -13,7 +13,7 @@
             <p>Vegetables</p>
         </a>
         <a href="#">Fruit</a>
-        <a href="#">Home</a>
+        <a href="/">Home</a>
         <a class="menu-button open" href="#">
             <div class="hamburger">
                 <div class="line"></div>

@@ -1,0 +1,62 @@
+.banner {
+    position:relative;
+    height:375px;
+    width:100%;
+    overflow:hidden;
+}
+.banner > img {
+    position:absolute;
+    height:100%;
+    top:0;
+    filter:blur(4px);
+}
+.banner > .margin {
+    text-align:center;
+    z-index:2;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100%;
+}
+.banner > .margin > h1 {
+    font-size:100px;
+    margin:0;
+    text-transform:uppercase;
+    color:#f94414;
+    text-shadow:1px 1px 5px rgba(0,0,0,.75);
+    font-family: 'Londrina Solid', cursive;
+    letter-spacing:10px
+}
+.banner > .margin > p {
+    font-weight:600;
+    font-size:32px;
+    color:#fff;
+    text-shadow:1px 1px 5px rgba(0,0,0,.75);
+    font-family: 'Londrina Solid', cursive;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin:0;
+}
+.question-container {
+    padding:10px;
+    margin-top:20px;
+}
+.heading {
+    font-family: 'Londrina Solid', cursive;
+    font-size:32px;
+    color:#f94414;
+    margin:0;
+    letter-spacing:2px;
+    text-shadow:1px 1px 1px rgba(0,0,0,.8)
+}
+.heading::before {
+    content: url(/img/leaf.png);
+    transform: translate(-4px, 5px) scale(.8);
+    display: inline-block;
+    line-height: 48px;
+}
+.heading-body {
+    margin-top:0;
+    color:#000;
+}

@@ -7,8 +7,10 @@
 # RewriteRule ^items/([^/]+)$ /lists/item-category-list.php?category=$1 [L]
 
 #
-# RewriteRule ^our-farms$ /our-farms.php [L]
- Redirect 301 /our-farms /our-farms.php
+ RewriteRule ^our-farms our-farms.php [L,QSA]
+
+#  RewriteCond %{REQUEST_FILENAME} !-f
+#  RewriteCond %{REQUEST_FILENAME} !-d
 
 
 # RewriteRule ^(.*)/$ /$1 [L,R=301]
@@ -16,4 +18,4 @@
 # ErrorDocument 403 /include/404.php
 # ErrorDocument 404 /include/404.php
 #
- Options -Indexes
+# Options -Indexes
