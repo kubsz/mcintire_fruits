@@ -121,7 +121,7 @@ colors:
 .menu-nav {
     position:absolute;
     z-index:999;
-    max-width:60%;
+    max-width:80%;
     width:400px;
     left:-400px;
     height:100%;
@@ -136,9 +136,18 @@ colors:
     text-decoration:none;
     font-size:18px;
     letter-spacing:1px;
-    padding:10px 5px;
+    padding:20px 20px;
+    border-top:1px solid rgba(255,255,255,.15);
     font-weight:600;
     text-transform:uppercase;
+    transition:.02s ease;
+    background:rgba(255,255,255,0);
+}
+.menu-nav > a:last-of-type {
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+.menu-nav > a:hover {
+    background:#356353;
 }
 .page-mask {
     width:100vw;

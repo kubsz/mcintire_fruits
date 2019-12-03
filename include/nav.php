@@ -7,12 +7,10 @@
                 <span>Fruit</span>
             </div>
         </a>
-        <a href="#" id="kids-area-button" class="orange-button"><p>Kids Area </p></a>
+        <a href="/kids-area" id="kids-area-button" class="orange-button"><p>Kids Area </p></a>
         <a href="/our-farms">Our Farms</a>
-        <a class="nav-dropdown-container" href="#">
-            <p>Vegetables</p>
-        </a>
-        <a href="#">Fruit</a>
+        <a href="/vegetables"><p>Vegetables</p></a>
+        <a href="/fruit">Fruit</a>
         <a href="/">Home</a>
         <a class="menu-button open" href="#">
             <div class="hamburger">
@@ -25,10 +23,10 @@
 </div>
 <div class="page-mask">
     <div class="menu-nav">
-        <a href="#">Home</a>
-        <a href="#">Fruit</a>
-        <a href="#">Vegetables</a>
+        <a href="/">Home</a>
+        <a href="/fruit">Fruit</a>
+        <a href="/vegetables">Vegetables</a>
         <a href="/our-farms">Our Farms</a>
-        <a href="#">Kids Area</a>
+        <a href="/kids-area">Kids Area</a>
     </div>
 </div>
