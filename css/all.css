@@ -99,7 +99,7 @@ body {
 }
 .box-card > p {
     font-size:16px;
-    padding:0px 20px 15px 20px;
+    padding:0 20px 15px 20px;
     text-align:left;
 }
 .box-card > .box-button {
