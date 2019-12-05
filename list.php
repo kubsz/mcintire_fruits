@@ -2,7 +2,10 @@
 $type = substr($_SERVER[REQUEST_URI], 1);
 switch ($type) {
     case "fruit":
+        echo "<script>var navNumber = 5</script>"; // for nav coloring
+        break;
     case "vegetables":
+        echo "<script>var navNumber = 4</script>";
         break;
     default:
         die(include($_SERVER['DOCUMENT_ROOT']."/include/404.php"));
@@ -27,5 +30,6 @@ switch ($type) {
 </html>
 <script src="/script/nav.js"></script>
 <script>
-    $(".inner-nav > a:nth-of-type(3 )").css("color", "#f94414");
+    $(".inner-nav > a:nth-of-type(" + (navNumber--) + ")").css("color", "#f94414");
+    $(".menu-nav > a:nth-last-child(" + (navNumber--) + ")").css({"color": "#f94414", "background": "#356353"});
 </script>

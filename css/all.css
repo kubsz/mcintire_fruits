@@ -128,4 +128,7 @@ body {
     .box-card > p, .box-button {
         text-align:center !important;
     }
+    .box-button {
+        width:calc(100% - 40px)
+    }
 }
