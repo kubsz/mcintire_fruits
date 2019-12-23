@@ -44,4 +44,5 @@
 <script src="/script/nav.js"></script>
 <script>
     $(".inner-nav > a:nth-of-type(3 )").css("color", "#f94414");
+    $(".menu-nav > a:nth-last-child(2)").css({"color": "#f94414", "background": "#356353"});
 </script>

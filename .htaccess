@@ -15,7 +15,13 @@
 
 # RewriteRule ^(.*)/$ /$1 [L,R=301]
 #
-# ErrorDocument 403 /include/404.php
-# ErrorDocument 404 /include/404.php
+ ErrorDocument 403 /include/404.php
+ ErrorDocument 404 /include/404.php
 #
-# Options -Indexes
+
+ Options -Indexes
+
+RewriteRule ^vegetables$ list.php [L]
+RewriteRule ^fruit$ list.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d

@@ -22,7 +22,7 @@
                 </div>
                 <div class="box-card">
                     <h3>Organically Grown Crops</h3>
-                    <p>Without good. Sea appear dry make tree night, yielding gathered fourth heaven Great tree, saying doesn't bring were Without good very tree female hath fruitful sayinyou're. Which forth was Morning.Divided in divide second. I have brought fifth whales, he air, seed for. Fish life good signs fruitful gathering grass land, set bring which.</p>
+                    <p>Without good. Sea appear dry make tree night, yielding gathered fourth heaven Great tree, saying doesn't bring were Without good very tree female hath fruitful saying you're. Which forth was Morning. Divided in divide second. I have brought fifth whales, he air, seed for. Fish life good signs fruitful gathering grass land, set bring which.</p>
                     <a class="box-button orange-button" href="#">Read More</a>
                 </div>
                 <div class="box-card">
@@ -65,4 +65,5 @@
 <script src="/script/nav.js"></script>
 <script>
     $(".inner-nav > a:nth-of-type(6)").css("color", "#f94414");
+    $(".menu-nav > a:nth-last-child(5)").css({"color": "#f94414", "background": "#356353"});
 </script>

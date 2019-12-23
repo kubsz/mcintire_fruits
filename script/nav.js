@@ -1,5 +1,7 @@
 $(".menu-button").click(function () {
     if($(".page-mask").hasClass("open-nav")) {
+        $(this).removeClass("close");
+        $(this).addClass("open");
         $(".page-mask").removeClass("open-nav");
         setTimeout(function () {
             $(".page-mask").css("display", "none");
@@ -7,8 +9,17 @@ $(".menu-button").click(function () {
     }
     else {
         $(".page-mask").css("display", "block");
+        $(this).removeClass("open");
+        $(this).addClass("close");
         setTimeout(function() {
             $(".page-mask").addClass("open-nav");
         },10)
+    }
+});
+
+$(".page-mask").click(function(e) {
+    console.log(e.target)
+    if(!$(e.target).hasClass("menu-nav")) {
+        $(".menu-button").click();
     }
 });

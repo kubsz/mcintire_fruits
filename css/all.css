@@ -93,13 +93,15 @@ body {
     font-size:32px;
     text-transform:uppercase;
     width:100%;
+    padding:0 10px;
     letter-spacing:2px;
     margin-bottom:0;
     text-align:center;
 }
 .box-card > p {
     font-size:16px;
-    padding:0px 20px 15px 20px;
+    padding:0 20px 15px 20px;
+    width:100%;
     text-align:left;
 }
 .box-card > .box-button {
@@ -129,7 +131,9 @@ body {
         margin:10px 0;
     }
     .box-card > p, .box-button {
-        width:calc(100% - 40px);
         text-align:center !important;
+    }
+    .box-button {
+        width:calc(100% - 40px)
     }
 }

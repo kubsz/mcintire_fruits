@@ -53,7 +53,7 @@ colors:
     letter-spacing:5.2px;
     color:inherit;
 }
-.inner-nav > a:not(.logo-container) {
+.inner-nav > a:not(.logo-container):not(.menu-button) {
     padding:20px 30px;
     font-weight:600;
     font-size:15px;
@@ -102,6 +102,9 @@ colors:
     background:#fff;
     height:calc((100% / 6))
 }
+.close {
+    transform:translateX(3px);
+}
 .close > .hamburger > .line:first-of-type {
     display:none;
 }
@@ -118,12 +121,12 @@ colors:
 .menu-nav {
     position:absolute;
     z-index:999;
-    max-width:60%;
+    max-width:80%;
     width:400px;
     left:-400px;
     height:100%;
     background:#124835;
-    margin-top:-1px;
+    margin-top:0;
     display:flex;
     flex-direction:column;
     transition:.3s ease;
@@ -133,9 +136,22 @@ colors:
     text-decoration:none;
     font-size:18px;
     letter-spacing:1px;
-    padding:10px 5px;
+    padding:20px 20px;
+    border-top:.5px solid rgba(255,255,255,.15);
+    border-bottom:.5px solid rgba(255,255,255,.15);
     font-weight:600;
     text-transform:uppercase;
+    transition:.02s ease;
+    background:rgba(255,255,255,0);
+}
+.menu-nav > a:last-of-type {
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+.menu-nav > a:first-of-type {
+    border-top:1px solid rgba(255,255,255,.15);
+}
+.menu-nav > a:hover {
+    background:#356353;
 }
 .page-mask {
     width:100vw;
