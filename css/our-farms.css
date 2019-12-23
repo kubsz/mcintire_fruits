@@ -1,14 +1,18 @@
 .banner {
     position:relative;
-    height:375px;
+    height:400px;
     width:100%;
     overflow:hidden;
+    transform:translateY(-5px)
 }
 .banner > img {
     position:absolute;
-    height:100%;
+    height:calc(100% + 5px);
+    width:130%;
+    transform:translate(-5%, -5px);
     top:0;
     filter:blur(4px);
+    box-shadow:0 5px 5px rgba(0,0,0,.7);
 }
 .banner > .margin {
     text-align:center;

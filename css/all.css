@@ -115,6 +115,11 @@ body {
     transition:.15s ease all;
     font-size:14px;
 }
+.green-background {
+    background:#124835;
+    color:#fff;
+}
+
 @media (max-width: 1150px) {
     .box-card-container {
         flex-wrap:wrap;

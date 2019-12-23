@@ -10,7 +10,7 @@
 <div class="content">
     <?php include($_SERVER['DOCUMENT_ROOT']."/include/nav.php")?>
     <div class="banner">
-        <img src="/img/banner.jpg" alt="Highland rural field">
+        <img src="/img/our-farms.jpg" alt="Highland rural field">
         <div class="margin">
             <h1>Our Farms</h1>
             <p>Revolutionizing the industrial revolution since 1987.</p>
