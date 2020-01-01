@@ -5,7 +5,6 @@
     <?php include($_SERVER['DOCUMENT_ROOT']."/include/head.php")?>
 </head>
 <body>
-
 <div class="content">
     <?php include($_SERVER['DOCUMENT_ROOT']."/include/nav.php")?>
     <div class="margin page">
@@ -33,37 +32,12 @@
             </div>
         </div>
     </div>
-    <div class="footer green-background">
-        <div class="margin">
-            <div class="footer-column">
-                <a href="/" class="logo-container">
-                    <div class="logo-left">MC</div>
-                    <div class="logo-right">
-                        <span>Intire</span>
-                        <span>Fruit</span>
-                    </div>
-                </a>
-                <p>Producing healthy, quality crops at a small price.</p>
-                <p>© <?=date("Y")?> McIntire Fruit. All rights reserved.</p>
-            </div>
-            <div class="footer-column">
-                <h4>Links</h4>
-                <a href="#">Home</a>
-                <a href="#">Fruit</a>
-                <a href="#">Vegetables</a>
-                <a href="#">Our Farms</a>
-            </div>
-            <div class="footer-column">
-                <h4>Contact Us</h4>
-                <a href="#"></a>
-            </div>
-        </div>
-    </div>
 </div>
+<?=include($_SERVER['DOCUMENT_ROOT']."/include/footer.php")?>
 </body>
-</html>
 <script src="/script/nav.js"></script>
 <script>
     $(".inner-nav > a:nth-of-type(6)").css("color", "#f94414");
     $(".menu-nav > a:nth-last-child(5)").css({"color": "#f94414", "background": "#356353"});
 </script>
+</html>

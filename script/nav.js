@@ -18,7 +18,6 @@ $(".menu-button").click(function () {
 });
 
 $(".page-mask").click(function(e) {
-    console.log(e.target)
     if(!$(e.target).hasClass("menu-nav")) {
         $(".menu-button").click();
     }
