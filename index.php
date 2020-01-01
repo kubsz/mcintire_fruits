@@ -1,3 +1,6 @@
+<?php
+include($_SERVER['DOCUMENT_ROOT']."/include/breadcrumb.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +9,10 @@
 </head>
 <body>
 <div class="content">
-    <?php include($_SERVER['DOCUMENT_ROOT']."/include/nav.php")?>
+    <?php
+        include($_SERVER['DOCUMENT_ROOT']."/include/nav.php");
+        include($_SERVER['DOCUMENT_ROOT']."/include/add_breadcrumb.php");
+    ?>
     <div class="margin page">
         <div class="box">
             <h1 class="box-header">McIntire Fruit</h1>
@@ -33,7 +39,9 @@
         </div>
     </div>
 </div>
-<?=include($_SERVER['DOCUMENT_ROOT']."/include/footer.php")?>
+<?php
+include($_SERVER['DOCUMENT_ROOT']."/include/footer.php")
+?>
 </body>
 <script src="/script/nav.js"></script>
 <script>

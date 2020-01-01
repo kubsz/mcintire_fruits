@@ -38,6 +38,31 @@ body {
     flex-direction:column;
     min-height:100%;
 }
+.breadcrumb {
+    background:rgba(18,72,53,.15);
+    border-bottom:2px solid #124835;
+}
+.breadcrumb p {
+    margin:0;
+    padding:10px 0;
+    text-transform:uppercase;
+    font-family:'Londrina Solid', cursive;
+    letter-spacing:2px;
+    font-size:20px;
+    font-weight:800;
+    color:#124835;
+}
+.breadcrumb a {
+    padding:0 10px;
+}
+.breadcrumb .link {
+    color:#f94414;
+    text-decoration: none;
+    padding-left:0;
+}
+.breadcrumb .link:hover {
+    text-decoration:underline;
+}
 .box {
     margin-top:20px;
     padding:20px;

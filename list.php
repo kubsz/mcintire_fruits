@@ -10,6 +10,28 @@ switch ($type) {
     default:
         die(include($_SERVER['DOCUMENT_ROOT']."/include/404.php"));
 }
+
+function setImage($size, $name, $image_name, $season) {
+    $type = substr($_SERVER[REQUEST_URI], 1);
+    if($size == "large")
+        return "<div class=\"large-crop-button\">
+                <a href=\"#\" class=\"crop-image $size\">
+                    <h3 class=\"two-lines\">VIEW ALL<BR>".strtoupper($season)." ".strtoupper($type)."</h3>
+                    <img alt=\"\" src=\"/img/crop/$image_name.jpg\">
+                    <div class=\"border\"></div>
+                </a>
+            </div>";
+    else
+        return "<a href=\"#\" class=\"crop-image $size\">
+                <h3>".strtoupper($name)."</h3>
+                <p>".strtoupper($season)." ".strtoupper($type)."</p>
+                <img src=\"/img/crop/$image_name.jpg\">
+                <div class=\"border\"></div>
+            </a>";
+
+}
+
+include($_SERVER['DOCUMENT_ROOT']."/include/breadcrumb.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,25 +43,45 @@ switch ($type) {
 <body>
 
 <div class="content">
-    <?php include($_SERVER['DOCUMENT_ROOT']."/include/nav.php")?>
+    <?php
+    include($_SERVER['DOCUMENT_ROOT']."/include/nav.php");
+    include($_SERVER['DOCUMENT_ROOT']."/include/add_breadcrumb.php");
+    ?>
     <div class="margin page">
-        <h1><?=ucwords($type)?></h1>
+        <div class="top-section">
+            <h1><?=ucwords($type)?></h1>
+            <p>View all crops from various seasons. Click to find more about the <?=$type?>.</p>
+        </div>
         <div class="crop-image-container">
-            <div class="crop-image-row">
-                <div class="large-crop-button">
-                    <img src="https://static01.nyt.com/images/2018/05/23/dining/23fruit/23fruit-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
-                </div>
-                <div class="multiple-image-container">
-                    <img class="landscape" src="https://www.rebelsbrewery.it/wp-content/uploads/2018/06/Summer-Fruits-To-Keep-You-Cool-This-Season.jpg">
-                    <img src="http://rivertea.com/blog/wp-content/uploads/2013/07/strawberries.jpg">
-                    <img src="https://www.thespruceeats.com/thmb/dxd9xDeDbNWYA1qJ3VHjZfdE9zM=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-962872648-ee237477599f439ba6b3a4db51c980ae.jpg">
-                    <img src="https://fridgefresh.com/wp-content/uploads/2019/03/FreshFridge-optimized-1080x675.jpg">
-                </div>
+            <?php
+            $fruit_string = "<div class=\"crop-image-row\">".
+                setImage('large', null, 'fruit-group-1', 'spring').
+                "<div class=\"multiple-image-container\">".
+                    setImage('landscape', 'raspberry', 'raspberries-2', 'spring').
+                    setImage('small', 'lemon', 'lemon', 'spring').
+                    setImage('small', 'strawberries', 'two-strawberries', 'spring').
+                "</div>
+            </div>";
+            $veg_string = "<div class=\"crop-image-row\">
+                                <div class=\"multiple-image-container\">".
+                                    setImage('landscape', 'green beans', 'zoomed-green-beans', 'summer').
+                                    setImage('small', 'mushrooms', 'mushrooms', 'summer').
+                                    setImage('small', 'onion', 'onion', 'summer').
+                                "</div>".
+                                    setImage('large', null, 'vegetable-group-1', 'summer').
+                            "</div>";
 
-            </div>
+            if($type == "vegetables")
+                echo $veg_string.$fruit_string;
+            else
+                echo $fruit_string.$veg_string;
+            ?>
         </div>
     </div>
 </div>
+<?php
+include($_SERVER['DOCUMENT_ROOT']."/include/footer.php")
+?>
 </body>
 </html>
 <script src="/script/nav.js"></script>

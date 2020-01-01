@@ -3,7 +3,8 @@
     height:400px;
     width:100%;
     overflow:hidden;
-    transform:translateY(-5px)
+    transform:translateY(-5px);
+    margin-bottom:10px;
 }
 .banner > img {
     position:absolute;
@@ -43,8 +44,7 @@
     margin:0;
 }
 .question-container {
-    padding:10px;
-    margin-top:20px;
+    padding:10px 10px 0 10px;
 }
 .heading {
     font-family: 'Londrina Solid', cursive;
@@ -53,7 +53,6 @@
     margin:0;
     letter-spacing:4px;
     text-transform:uppercase;
-    text-shadow:1px 1px 1px rgba(0,0,0,.8)
 }
 .heading::before {
     content: url(/img/leaf.png);
@@ -64,4 +63,7 @@
 .heading-body {
     margin-top:0;
     color:#000;
+    font-weight:600;
+    opacity:.9;
+    font-size:18px;
 }

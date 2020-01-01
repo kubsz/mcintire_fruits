@@ -18,8 +18,8 @@
  ErrorDocument 403 /include/404.php
  ErrorDocument 404 /include/404.php
 #
-
- Options -Indexes
+#
+# Options -Indexes
 
 RewriteRule ^vegetables$ list.php [L]
 RewriteRule ^fruit$ list.php [L]
