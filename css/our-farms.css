@@ -3,7 +3,6 @@
     height:400px;
     width:100%;
     overflow:hidden;
-    transform:translateY(-5px);
     margin-bottom:10px;
 }
 .banner > img {
@@ -66,4 +65,7 @@
     font-weight:600;
     opacity:.9;
     font-size:18px;
+}
+.page {
+    padding-bottom:20px;
 }

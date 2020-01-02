@@ -1,3 +1,6 @@
+<?php
+include($_SERVER['DOCUMENT_ROOT']."/include/breadcrumb.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,10 @@
 <body>
 
 <div class="content">
-    <?php include($_SERVER['DOCUMENT_ROOT']."/include/nav.php")?>
+    <?php
+    include($_SERVER['DOCUMENT_ROOT']."/include/nav.php");
+    include($_SERVER['DOCUMENT_ROOT']."/include/add_breadcrumb.php");
+    ?>
     <div class="banner">
         <img src="/img/our-farms.jpg" alt="Highland rural field">
         <div class="margin">
@@ -40,6 +46,9 @@
     </div>
 </div>
 </body>
+<?php
+include($_SERVER['DOCUMENT_ROOT']."/include/footer.php");
+?>
 </html>
 <script src="/script/nav.js"></script>
 <script>
