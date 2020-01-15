@@ -168,7 +168,10 @@ colors:
 }
 
 .footer {
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
     padding:20px 0;
+    margin-top:20px;
+    flex-shrink: 0;
 }
 .footer > .margin {
     display:flex;

@@ -9,24 +9,23 @@ colors:
 * {
     box-sizing:border-box;
 }
-html {
-    min-height:100%;
-}
-body {
+body, html {
     font-family:"Montserrat", "sans-serif";
-    background:#111;
+    background:#F8F3E3;
     color:#181D27;
     margin:0;
-    min-height:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
 }
 .content {
-    min-height:100vh;
     position:relative;
     background:#F8F3E3;
     overflow:hidden;
     transition-duration:.5s;
     transition-timing-function:ease;
     width:100%;
+    flex: 1;
 }
 .margin {
     width:1200px;
